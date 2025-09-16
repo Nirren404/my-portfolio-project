@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is my personal portfolio website" />
+    <meta name="author" content="Nirari Yaro" />
+    <title>Nirari Yaro | My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="topnav-content">
+        <ul>
+          <li><a href="#about-section" class="about">About</a></li>
+          <li><a href="#project" class="project">Projects</a></li>
+          <li><a href="#contact" class="contact">Contact</a></li>
+          <li><a href="#social-links" class="social-links">Social Links</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <h1>Hello world!</h1>
+      <picture>
+        <img src="./assets/profile-picture.jpg" alt="profile picture" />
+      </picture>
+      <h2>I'm Nirari Yaro</h2>
+      <p>Student. Coder. Creator. Network Engineer.</p>
+    </section>
+
+    <main>
+      <section class="about-section" id="about-section">
+        <!-- Card 1: About Me -->
+        <div class="card-1">
+          <h2>Who Am I?</h2>
+          <p>
+            Hello, I am a dedicated and ambitious 19-year-old based in Botkyrka,
+            Stockholm, with a strong passion for technology and web development.
+            I began my educational journey in 2022 at the NTI Gymnasiet, where I
+            specialized in Electrical Energy with a focus on Computer
+            Communication Technology and IT Network Engineering. I successfully
+            graduated in the summer of 2025 and am currently pursuing a
+            full-stack web development program. My goal is to further deepen my
+            expertise either within network engineering or web development,
+            ultimately aiming to build a career in an area I am truly passionate
+            about. I am committed to continuous learning and excited to
+            contribute my skills to innovative projects in the tech industry.
+          </p>
+        </div>
+
+        <!-- Card 2: My Skills -->
+        <div class="card-2">
+          <h2>My Skills</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Skills</th>
+                <th>Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>Intermediate (3 Years)</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Intermediate (3 Years)</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>Beginner (1 Year)</td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>Beginner (Half Year)</td>
+              </tr>
+              <tr>
+                <td>Network Engineering</td>
+                <td>Intermediate (3 Years)</td>
+              </tr>
+              <tr>
+                <td>Communication Skills</td>
+                <td>Advanced</td>
+              </tr>
+              <tr>
+                <td>Problem-Solving</td>
+                <td>Advanced</td>
+              </tr>
+              <tr>
+                <td>Team Collaboration</td>
+                <td>Advanced</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="project-section" id="project">
+        <h2>My Projects</h2>
+
+        <div class="project-card">
+          <h3>Future Projects</h3>
+          <p>
+            Future projects coming soon! Stay tuned for updates and new projects
+            I will add to this portfolio.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <!-- Contact information goes here -->
+        <h2>Contact Me!</h2>
+        <p>
+          Feel free to reach out to me via this contact form or the contact
+          information below
+        </p>
+
+        <form action="#" method="POST" class="contact-form">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Full Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+
+        <div class="contact-info">
+          <p>Email: nirari@example.com</p>
+          <p>Phone: +46 70 123 45 67</p>
+          <p>Location: Botkyrka, Stockholm</p>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92500.24230322846!2d17.76951716366829!3d59.18280946674248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f6e0b7d0025fd%3A0xd204be8674b32aaf!2sBotkyrka!5e0!3m2!1ssv!2sse!4v1757882216013!5m2!1ssv!2sse"
+            loading="lazy"
+            fullscreen=""
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <!-- Social Links Section -->
+        <div class="footer-section" id="social-links">
+          <h2>Social Links</h2>
+          <h3>Connect with Me</h3>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/Nirren404"
+                alt="GitHub link"
+                target="_blank"
+                class="icon-link"
+                aria-label="GitHub"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Resources Section -->
+        <div class="footer-section" id="resources">
+          <h2>Resources</h2>
+          <h3>I recommend checking out this YouTube channel:</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.youtube.com/@dcode-software"
+                target="_blank"
+                class="icon-link"
+                alt="Dcode - YouTube Channel"
+                aria-label="YouTube Channel"
+              >
+                Dcode - YouTube Channel
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p>Follow me on my coding journey!</p>
+      <p>&copy; 2025 Nirari Yaro. All rights reserved.</p>
+      <a href="/TE4–Portfolio-Project">Back to Top</a>
+    </footer>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
