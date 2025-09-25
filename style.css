@@ -494,3 +494,15 @@ footer a:hover {
     padding: 20px;
   }
 }
+
+/*  @media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: white;
+    --secondary-color: black;
+  }
+
+  body {
+    background-color: var(--secondary-color);
+  }
+}
+ */
