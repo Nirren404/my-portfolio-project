@@ -494,7 +494,12 @@ footer a:hover {
     padding: 20px;
   }
 }
-
+#welcome-msg {
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  font-size: 1.1rem;
+}
 /*  @media (prefers-color-scheme: dark) {
   :root {
     --primary-color: white;

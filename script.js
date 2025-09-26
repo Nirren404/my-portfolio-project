@@ -5,8 +5,6 @@ const myRole = "Frontend Developer";
 const welcomeMessage = document.getElementById("welcome-msg");
 
 welcomeMessage.textContent = `Welcome to ${myName}'s Portfolio! I am a ${myRole} passionate about creating engaging and user-friendly web experiences. Explore my projects and get to know more about me!`;
-(welcomeMessage.style.fontFamily = "nunito"), "sans-serif";
-welcomeMessage.style.textAlign = "center";
 
 // * Skills List (Arrays + Loops)
 const skills = [
@@ -68,3 +66,30 @@ aboutMeParagraph.style.fontFamily = "nunito";
 aboutMeParagraph.style.textAlign = "center";
 
 // * Contact Form Feedback (Functions + DOM)
+const form = document.getElementById("myForm");
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const messageInput = document.getElementById("message");
+const feedback = document.getElementById("form-feedback");
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  console.log(event.target.name.value);
+  if (
+    nameInput.value === "" ||
+    emailInput.value === "" ||
+    messageInput.value === ""
+  ) {
+    feedback.textContent = "Please fill in all fields.";
+    feedback.style.color = "red";
+    return;
+  }
+
+  feedback.style.color = "green";
+  feedback.textContent = `Thank you ${event.target.name.value} for getting in touch! We will get back to you asap!`;
+
+  setTimeout(() => {
+    feedback.textContent = "";
+    feedback.style.color = "black";
+    form.reset();
+  }, 3000);
+});
