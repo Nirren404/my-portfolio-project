@@ -4,7 +4,7 @@ const myRole = "Frontend Developer";
 
 const welcomeMessage = document.getElementById("welcome-msg");
 
-welcomeMessage.textContent = `Welcome to ${myName}'s Portfolio! I am a ${myRole} passionate about creating engaging and user-friendly web experiences. Explore my projects and get to know more about me!`;
+welcomeMessage.textContent = `Welcome to ${myName}'s Portfolio!. I'm a ${myRole} passionate about creating engaging and user-friendly web experiences. Explore my projects and get to know more about me!`;
 
 // * Skills List (Arrays + Loops)
 const skills = [
