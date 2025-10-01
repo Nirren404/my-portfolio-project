@@ -1,4 +1,4 @@
-// * Welcome Message (Strings + Variables)
+// *  1 Welcome Message (Strings + Variables)
 const myName = "Nirari Yaro";
 const myRole = "Frontend Developer";
 
@@ -6,7 +6,7 @@ const welcomeMessage = document.getElementById("welcome-msg");
 
 welcomeMessage.textContent = `Welcome to ${myName}'s Portfolio!. I'm a ${myRole} passionate about creating engaging and user-friendly web experiences. Explore my projects and get to know more about me!`;
 
-// * Skills List (Arrays + Loops)
+// *  2 Skills List (Arrays + Loops)
 const skills = [
   { name: "HTML", level: "Intermediate (3 Years)" },
   { name: "CSS", level: "Intermediate (3 Years)" },
@@ -47,7 +47,7 @@ for (const skill of skills) {
   tbody.appendChild(row);
 }
 
-// * About Me Section (Objects + Strings)
+// *  3 About Me Section (Objects + Strings)
 
 const aboutmeContact = {
   name: "Nirari Yaro",
@@ -65,7 +65,7 @@ generateAboutMeText(aboutmeContact);
 aboutMeParagraph.style.fontFamily = "nunito";
 aboutMeParagraph.style.textAlign = "center";
 
-// * Contact Form Feedback (Functions + DOM)
+// *  4 Contact Form Feedback (Functions + DOM)
 const form = document.getElementById("myForm");
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
